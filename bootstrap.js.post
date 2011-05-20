@@ -1,0 +1,19 @@
+
+// Replace load_binary with one that uses Node's filesystem API
+ea.prototype.load_binary = function load_binary(path, offset) {
+    var buffer = fs.readFileSync(options.base+path);
+    var length = buffer.length;
+    for (var i = 0; i < length; i++) {
+        this.st8_phys(offset + i, buffer[i]);
+    }
+    // console.log("loaded " + path + " ("+length+" bytes to location 0x" + offset.toString(16) + ")");
+    return length;
+};
+
+this.terminal = aa;
+
+// TODO: can we pass boot arguments somehow?
+this.boot = function() {
+    start();
+    this.cpu = ya;
+}

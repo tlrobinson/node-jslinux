@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+BASE_PATH="$PWD/external"
+BASE_URL="http://bellard.org/jslinux"
+FILES="cpux86.js linuxstart.bin root.bin vmlinux26.bin"
+# FILE="index.html term.js $FILES"
+
+mkdir -p "$BASE_PATH"
+
+for file in $FILES; do
+    echo "Downloading $BASE_URL/$file to $BASE_PATH/$file"
+    curl "$BASE_URL/$file" -o "$BASE_PATH/$file"
+done

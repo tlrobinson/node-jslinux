@@ -1,0 +1,17 @@
+{
+  "name": "jslinux",
+  "description": "jslinux (http://bellard.org/jslinux/) adapted for Node.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlrobinson/node-jslinux.git"
+  },
+  "contributors": [ "Tom Robinson <tlrobinson@gmail.com> (http://tlrobinson.net/)" ],
+  "main": "jslinux.js",
+  "dependencies" : ["typed-array"],
+  "scripts": { "install": "./download_jslinux" },
+  "engines": {
+    "node": "*"
+  },
+  "bin" : { "jslinux" : "./bin/jslinux" }
+}
