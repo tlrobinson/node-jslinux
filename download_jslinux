@@ -4,8 +4,8 @@ set -e
 
 BASE_PATH="$PWD/external"
 BASE_URL="http://bellard.org/jslinux"
-FILES="cpux86.js linuxstart.bin root.bin vmlinux26.bin"
-# FILE="index.html term.js $FILES"
+FILES="cpux86.js cpux86-ta.js linuxstart.bin root.bin vmlinux26.bin"
+# FILE="index.html term.js jslinux.js $FILES"
 
 mkdir -p "$BASE_PATH"
 

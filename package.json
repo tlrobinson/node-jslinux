@@ -1,7 +1,7 @@
 {
   "name": "jslinux",
   "description": "jslinux (http://bellard.org/jslinux/) adapted for Node.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/tlrobinson/node-jslinux.git"
