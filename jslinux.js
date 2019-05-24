@@ -85,7 +85,7 @@ exports.boot = function() {
 
     if (exports.USE_RAW_MODE) {
         console.log("[Node.js switching to raw mode. Hit Ctrl-C four times in a row to exit.]");
-        tty.setRawMode(true);
+        process.stdin.setRawMode(true);
         var ctrlCs = 0;
         process.stdin.on('keypress', function(char, key) {
             if (key && key.ctrl && key.name == 'c') {
